@@ -11,6 +11,11 @@ module.exports = function(grunt) {
 			    	{expand: true, cwd: './bower_components/bootstrap/dist/js/', src: ['bootstrap.js'], dest: './wp-content/themes/setpress/js/'},
 			    	{expand: true, cwd: './bower_components/bootstrap/dist/css/', src: ['bootstrap.css'], dest: './wp-content/themes/setpress/css/'},
 			    ]
+		    },
+		    init: {
+			    files: [
+			    	{expand: true, cwd: './bower_components/wordpress/', src: ['**'], dest: './'},
+			    ]
 		    }
 		},
 		less: {  // compile .less files
@@ -80,6 +85,7 @@ module.exports = function(grunt) {
 
 	// Task definition
 	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('update', ['copy']); // run once to pull assets from packages
+	grunt.registerTask('build', ['copy:init']); // run once after 'bower install' to copy wordpress core files
+	grunt.registerTask('update', ['copy:main']); // run after 'bower update' to update jquery and bootstrap
 	grunt.registerTask('prod', ['less:prod', 'concat', 'uglify']); // on production, concat and minify
 };

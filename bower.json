@@ -1,24 +1,22 @@
 {
-  "name": "Setpress",
-  "version": "1.0.0",
-  "authors": [
-    "Yadiel Arroyo <yadielar@gmail.com>"
-  ],
-  "license": "MIT",
-  "homepage": "http:/github.com/yadielar/setpress",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "latest",
-    "jquery": "1.10.2",
-    "wordpress": "latest",
-    //"_s": "https://github.com/Automattic/_s.git",
-    //"_tk": "https://github.com/Themekraft/_tk.git"
-  }
+	"name": "Setpress",
+	"version": "1.0.0",
+	"authors": [
+		"Yadiel Arroyo <yadielar@gmail.com>"
+	],
+	"license": "MIT",
+	"homepage": "http:/github.com/yadielar/setpress",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"bootstrap": "latest",
+		"jquery": "1.10.2",
+		"wordpress": "latest"
+	}
 }
