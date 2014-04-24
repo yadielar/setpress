@@ -12,7 +12,7 @@ Based on [_tk](https://github.com/Themekraft/_tk) and [_s](https://github.com/au
 
 ## Setup
 
-1. Download [Setpress](https://github.com/yadielar/setpress).
+1. Download [Setpress](https://github.com/yadielar/setpress/archive/master.zip).
 2. In Terminal, navigate to the repo and run `npm install`
 3. Then, run `bower install`
 4. Finally run `grunt build`
