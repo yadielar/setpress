@@ -1,0 +1,123 @@
+/*
+Theme Name: Setpress
+Theme URI: http://github.com/yadielar/setpress
+Author: Yadiel Arroyo
+Author URI: http://yadielar.com
+Description: Responsive WordPress theme boilerplate based on _tk.
+Version: 1.0.0
+*/
+
+/* Import necessary Setpress Bootstrap WP CSS additions and Minimal WP Styles*/
+@import "bootstrap-wp.less";
+
+/*
+======================================================
+                	THEME STYLES
+======================================================
+*/
+
+/* ------------------------------------*/
+/* ----->>> VARIABLES & MIXINS <<<-----*/
+/* ------------------------------------*/
+
+/* ==== Variables === */
+
+@white: #FFFFFF;
+@black: #000000;
+
+@brandFont: Helvetica, Arial, sans-serif;
+
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
+
+/* ==== Mixins === */
+
+.text-shadow (@string: 1px 1px 4px #000000) {
+	text-shadow: @string;
+}
+.user-select (@string: none) {
+	-webkit-touch-callout: @string;
+	-webkit-user-select: @string;
+	-khtml-user-select: @string;
+	-moz-user-select: @string;
+	-ms-user-select: @string;
+	user-select: @string;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* -----------------------------------*/
+/* ----------->>> BASE <<<------------*/
+/* -----------------------------------*/
+
+html, body {
+  height: 100%;
+}
+
+
+/* -----------------------------------*/
+/* ---------->>> LAYOUT <<<-----------*/
+/* -----------------------------------*/
+
+section {
+  padding: 20px 0;
+}
+.sidebar {
+	margin: 20px 0;
+}
+footer {
+	padding: 15px 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	section {
+	  padding: 30px 0;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+	section {
+	  padding: 40px 0;
+	}
+	.sidebar {
+	  margin: 40px 0 0;
+	}
+	footer {
+		padding: 20px 0;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+	section {
+	  padding: 50px 0;
+	}
+}
+
+
+
+/* ------------------------------------*/
+/* ---------->>> MODULES <<<-----------*/
+/* ------------------------------------*/
+
+
+/* Here goes styles for modules */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+
+}
