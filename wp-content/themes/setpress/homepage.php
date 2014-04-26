@@ -7,8 +7,11 @@
 
 get_header(); ?>
 
+<div class="container">
 
-<h1>Homepage</h1>
+	<h1>Homepage</h1>
+
+</div>
 
 
 <?php while ( have_posts() ) : the_post(); ?>

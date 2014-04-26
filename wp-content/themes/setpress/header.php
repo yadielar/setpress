@@ -66,11 +66,16 @@
 </nav><!-- .navbar-wrapper -->
 
 
-<?php /*
+<?php
 // Get the current template name
 global $template;
 $curr_temp = substr( $template, strrpos( $template, '/' )+1 );
+$exclude_templates = array(
+	"homepage.php",
+	"full.php"
+);
 
+/*
 // Include masthead everywhere except in the Home Page
 if (!is_front_page() || is_home()) {
 	global $post;
@@ -96,7 +101,7 @@ if (!is_front_page() || is_home()) {
 
 <?php
 // Include main content wrappers everywhere except in the Homepage and the Full Page template
-if (is_front_page() || is_home() || $curr_temp === "full.php") {
+if (in_array($curr_temp, $exclude_templates)) {
 	// Do something
 } else {
 ?>
